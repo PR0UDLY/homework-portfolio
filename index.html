@@ -1,14 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Homework Portfolio</title>
+    <style>
+        :root {
+            --primary: #2ea44f; /* GitHub Green */
+            --bg: #0d1117;      /* GitHub Dark Mode Background */
+            --card-bg: #161b22;
+            --text: #c9d1d9;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            margin: 0;
+        }
+
+        h1 {
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 10px;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 30px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 20px;
+            text-decoration: none;
+            color: var(--text);
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .project-card:hover {
+            border-color: #8b949e;
+            background-color: #21262d;
+            transform: translateY(-3px);
+            color: var(--primary);
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.8rem;
+            color: #8b949e;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Project Collection</h1>
-    <ul>
-        <li><a href="css-intro-PR0UDLY/">CSS Introduction</a></li>
-        <li><a href="live%20code%2022.12/">Live Code Dec 22</a></li>
-        <li><a href="live%20coding%2029.12/">Live Coding Dec 29</a></li>
-    </ul>
+
+    <h1>📚 My Homework Collection</h1>
+
+    <div class="container">
+        <a href="css-flex-box-PR0UDLY/" class="project-card">CSS Flexbox</a>
+        <a href="css-intro-PR0UDLY/" class="project-card">CSS Intro</a>
+        <a href="css-positions-PR0UDLY/" class="project-card">CSS Positions</a>
+        <a href="html-forms-10x-PR0UDLY/" class="project-card">HTML Forms</a>
+        <a href="html-tables-exercise-PR0UDLY/" class="project-card">HTML Tables</a>
+        <a href="live%20code%2022.12/" class="project-card">Live Code Dec 22</a>
+        <a href="live%20coding%2013.01/" class="project-card">Live Coding Jan 13</a>
+        <a href="live%20coding%2029.12/" class="project-card">Live Coding Dec 29</a>
+        <a href="pseudo-classes-PR0UDLY/" class="project-card">Pseudo Classes</a>
+        <a href="space-journey-part2-PR0UDLY/" class="project-card">Space Journey 2</a>
+        <a href="space-journey-part3-PR0UDLY/" class="project-card">Space Journey 3</a>
+    </div>
+
+    <footer>Generated for PR0UDLY's GitHub Portfolio</footer>
+
 </body>
 </html>
