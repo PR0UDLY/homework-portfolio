@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.menu {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  font-size: 0;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  width: 360px;
+  min-height: 530px;
+  border-radius: 16px;
+  margin: 10px;
+  box-shadow: 0 4px 10px #6e798c;
+  text-align: left;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 216px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-header {
+  padding: 12px 20px 5px 20px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 80px;
+}
+
+.logo1,
+.logo2,
+.logo3 {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+.logo1 img,
+.logo2 img,
+.logo3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.description {
+  margin: 0 20px 10px 20px;
+  min-height: 80px;
+}
+
+.description-text p {
+  color: #6e798c;
+  height: 75px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  border-top: 1px solid #f0f0f0;
+  padding: 15px 0;
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  width: 30%;
+  font-size: 12px;
+  color: #bdc3c7;
+  white-space: nowrap;
+}
+
+.price {
+  padding: 10px 20px 25px 20px;
+  text-align: center;
+}
+
+.price h2 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.price del {
+  display: inline-block;
+  vertical-align: middle;
+  color: #e74c3c;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.price button {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #2ecc71;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.price button:hover {
+  background-color: #27ae60;
+}
