@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  position: relative;
+  width: 1229px;
+  height: 671px;
+  max-width: 1200px;
+  background-color: #262525;
+  padding: 40px;
+  border-radius: 30px;
+  gap: 30px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 30px;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.navigation img {
+  width: 24px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 55px;
+}
+
+.logo2 img {
+  width: 28px;
+  height: 28px;
+}
+
+.hamburger-menu {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 2px;
+  padding-left: 5px;
+  margin-bottom: 40px;
+  position: absolute;
+  top: 30px;
+}
+
+.hamburger-menu span {
+  display: block;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  transition-duration: 0.2s;
+}
+
+.hamburger-menu:hover span {
+  width: 24px;
+  background-color: #acfffcc1;
+}
+
+.line-top {
+  width: 22px;
+}
+.line-mid {
+  width: 16px;
+}
+.line-bot {
+  width: 10px;
+}
+
+.navigation li.active {
+  background: rgba(124, 58, 237, 0.15);
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+.flex-row {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.card-small,
+.card-md,
+.card-wide,
+.card7 {
+  background-color: #181818;
+  border: 1px solid #252525;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.card-small {
+  box-shadow: 0 3px 20px 5px #0000005f;
+  border: none;
+  flex: 1;
+  height: 153px;
+}
+.card-wide {
+  height: 195px;
+  width: 809px;
+  box-shadow: 0 3px 20px 5px #0000005f;
+  border: none;
+  margin-bottom: 30px;
+}
+.card-md {
+  width: 386px;
+  height: 157px;
+  box-shadow: 0 3px 20px 5px #0000005f;
+  border: none;
+}
+.card7 {
+    flex: 1;
+    box-shadow: 0 3px 20px 5px #0000005f;
+    border: none;
+    width: 258px;
+    height: 273px;
+    margin-top: 110px;
+}
+
+.colored-cards {
+  flex: 1.2;
+  position: relative;
+  min-width: 200px;
+  right: 20px;
+}
+
+.colored-cards span {
+  position: absolute;
+  width: 180px;
+  height: 200px;
+  border-radius: 25px;
+  z-index: 1;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.5);
+}
+
+.violet {
+  background: linear-gradient(135deg, #8c3ce8 20%, #2b1043 100%);
+  top: 15px;
+  right: 25px;
+  border: solid 1px #44077e;
+}
+.yellow {
+  background: #c68e3c;
+  z-index: 2;
+  top: 5px;
+  right: 12px;
+  transform: rotate(16deg);
+}
+.green {
+  background: #0d9488;
+  z-index: 1;
+  top: -5px;
+  right: 0;
+  transform: rotate(34deg);
+}
+
+.gradient1,
+.gradient2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 2;
+}
+
+.gradient1 {
+  background-color: #1bafa954;
+  top: -150px;
+  left: -50px;
+  border-radius: 50%;
+  width: 118px;
+  z-index: 1;
+}
+
+.gradient2 {
+  background: #f1e9ff52;
+  top: 5px;
+  right: 50px;
+  border-radius: 50%;
+  width: 118px;
+  z-index: 1;
+}
